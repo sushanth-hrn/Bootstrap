@@ -19,7 +19,7 @@
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background-color: rgb(156, 10, 241);
+    background-color: rgb(146, 60, 196);
     color: black;
 }
 
@@ -28,3 +28,13 @@
     margin: 0px;
     color: #0f0f0f;
 }
+
+body{
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: rgb(101, 11, 185);
+}
+
