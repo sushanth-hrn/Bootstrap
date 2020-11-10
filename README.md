@@ -1,2 +1,2 @@
 # bootstrap
-Bootstrap tutorial in coursera
+Bootstrap tutorial (coursera)
