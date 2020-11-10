@@ -22,7 +22,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="logo" height="30" width="41"></a>
             <div class="collpase navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -41,7 +41,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a href="#reserve" class="btn btn-primary" style="background-color: yellow; color: black;">Reserve Table</a>                    
                 </div>
             </div>
         </div>
@@ -53,8 +57,13 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="pizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p style="text-align: justify; word-break: keep-all;">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>    
             </div>
         </div>
 
@@ -64,8 +73,14 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-12 col-sm order-sm-last col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p style="text-align: justify; word-break: keep-all;">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and 
+                            five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>    
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -74,9 +89,57 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img src="img/alberto.png" alt="our culinary specialist" class="img-fluid img-thumbnail mr-3 align-self-center d-flex">
+                    <div class="media-body">
+                        <h2 class="mt-auto">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p style="text-align: justify; word-break: keep-all;">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="row row-content" id="reserve">
+            <div class="col-12 col-sm-8 offset-2">
+                <div class="card">
+                    <h2 class="card-header" style="background-color: yellow; color: black;">Reserve a Table</h2>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="no.of guests" class="col-12 col-sm-4 col-form-label">Number of Guests</label>
+                                <div class="col-12 col-sm-8" id="no.of guests">
+                                    <label class="mr-2"><input type="radio" id="one" name="guests" value="one"> 1</label>
+                                    <label class="mr-2"><input type="radio" id="two" name="guests" value="two"> 2</label>
+                                    <label class="mr-2"><input type="radio" id="three" name="guests" value="three"> 3</label>
+                                    <label class="mr-2"><input type="radio" id="four" name="guests" value="four"> 4</label>
+                                    <label class="mr-2"><input type="radio" id="five" name="guests" value="five"> 5</label>
+                                    <label class="mr-2"><input type="radio" id="six" name="guests" value="six"> 6</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row">
+                                <label for="date and time" class="col-form-label col-12 col-sm-4">Date and Time</label>
+                                <div class="col-12 col-sm-4" id="date and time">
+                                    <input type="date" name="date" class="form-control">                                                                                
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <input type="time" name="time" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row">
+                                <div class="col-12 offset-4">
+                                    <button class="btn btn-primary" type="submit">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2">
+                </div>
             </div>
         </div>
     </div>
