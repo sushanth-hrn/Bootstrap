@@ -38,3 +38,9 @@ body{
     background-color: rgb(101, 11, 185);
 }
 
+.tab-content {
+    margin-left: 2px solid black;
+    margin-right: 2px solid black;
+    margin-bottom: 2px solid black;
+    padding: 10px;
+}
