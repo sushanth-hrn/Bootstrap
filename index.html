@@ -93,14 +93,68 @@
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#reserve" class="btn btn-warning" 
-                    data-toggle="tooltip" data-placement="bottom" data-html="true" 
-                    title="Or call us at <br><strong>+91 8096225056</strong></br>">
-                    Reserve Table
-                    </a>                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modelId">
+                        Reserve a Table
+                    </button>                              
                 </div>
             </div>
         </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Reserve a Table</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="no.of guests" class="col-12 col-sm-4 col-form-label">Number of Guests</label>
+                                <div class="col-12 col-sm-8" id="no.of guests">
+                                    <label class="mr-2"><input type="radio" id="one" name="guests" value="one"> 1</label>
+                                    <label class="mr-2"><input type="radio" id="two" name="guests" value="two"> 2</label>
+                                    <label class="mr-2"><input type="radio" id="three" name="guests" value="three"> 3</label>
+                                    <label class="mr-2"><input type="radio" id="four" name="guests" value="four"> 4</label>
+                                    <label class="mr-2"><input type="radio" id="five" name="guests" value="five"> 5</label>
+                                    <label class="mr-2"><input type="radio" id="six" name="guests" value="six"> 6</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-row form-group">
+                                <label for="smk" class="col-4">Section</label>
+                                <div class="col-8" id="smk">
+                                    <input type="radio" name="smoke" id="smoking" >
+                                    <label for="smoking" class="mr-0">Smoking</label>
+                                    <input type="radio" name="smoke" id="nonsmoking">
+                                    <label for="nonsmoking" class="ml-0 ">Non-smoking</label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row">
+                                <label for="date and time" class="col-form-label col-12 col-sm-4">Date and Time</label>
+                                <div class="col-12 col-sm-4" id="date and time">
+                                    <input type="date" name="date" class="form-control">                                                                                
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <input type="time" name="time" class="form-control">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row col-4 offset-8">
+                                <button type="button" class="btn btn-secondary btn-sm mr-1" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary btn-sm">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <div class="container">
@@ -200,7 +254,7 @@
         <div class="row row-content" id="reserve">
             <div class="col-12 col-sm-8 offset-2">
                 <div class="card">
-                    <h2 class="card-header" style="background-color: yellow; color: black;">Reserve a Table</h2>
+                    <h2 class="card-header bg-warning">Reserve a Table</h2>
                     <div class="card-body">
                         <form>
                             <div class="form-group row">
@@ -286,13 +340,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        }
-
-        );
-    </script>
 </body>
 
 </html>
