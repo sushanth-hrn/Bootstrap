@@ -31,8 +31,56 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
+            <div class="navbar-text">
+                <a data-toggle="modal" data-target="#loginmodal" style="cursor: pointer;">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                </a>
+            </div>
         </div>
     </nav>
+
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" >
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                          
+                          <div class="col-sm-4">
+                            <label for="username" class="sr-only">username:</label>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="username" aria-describedby="helpId">
+                          </div>
+
+                          <div class="col-sm-4">
+                            <label for="password" class="sr-only">password:</label>
+                            <input type="text" name="password" id="password" class="form-control" placeholder="password">
+                          </div>
+
+                          <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check">
+                                <label for="check" class="form-check-label"> Remember me</label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="form-group row col-4 offset-8">
+                            <button type="button" class="btn btn-secondary btn-sm mr-1" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary btn-sm">Sign in</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container">
@@ -45,7 +93,11 @@
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#reserve" class="btn btn-primary" style="background-color: yellow; color: black;">Reserve Table</a>                    
+                    <a href="#reserve" class="btn btn-warning" 
+                    data-toggle="tooltip" data-placement="bottom" data-html="true" 
+                    title="Or call us at <br><strong>+91 8096225056</strong></br>">
+                    Reserve Table
+                    </a>                    
                 </div>
             </div>
         </div>
@@ -189,6 +241,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+
+        );
+    </script>
 </body>
 
 </html>
