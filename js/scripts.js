@@ -19,3 +19,16 @@ $(document).ready(function () {
        $('#loginmodal').modal('show');
    }); 
 });
+
+var smoking = document.querySelector('#yes');
+var notSmoking = document.querySelector('#no');
+
+smoking.addEventListener('click', () => {
+    smoking.setAttribute("disabled", "disabled");
+    notSmoking.removeAttribute("disabled");
+});
+
+notSmoking.addEventListener('click', () => {
+    notSmoking.setAttribute("disabled", "disabled");
+    smoking.removeAttribute("disabled");
+});
