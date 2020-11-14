@@ -23,12 +23,12 @@ $(document).ready(function () {
 var smoking = document.querySelector('#yes');
 var notSmoking = document.querySelector('#no');
 
-smoking.addEventListener('click', () => {
+smoking.addEventListener('click', function() {
     smoking.setAttribute("disabled", "disabled");
     notSmoking.removeAttribute("disabled");
 });
 
-notSmoking.addEventListener('click', () => {
+notSmoking.addEventListener('click', function() {
     notSmoking.setAttribute("disabled", "disabled");
     smoking.removeAttribute("disabled");
 });
