@@ -1,3 +1,3 @@
 # bootstrap
-Bootstrap tutorial (coursera)
+Bootstrap tutorial (coursera).
 Check the master branch for files
